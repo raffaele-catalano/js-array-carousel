@@ -67,6 +67,15 @@ body {
     color: #1ED760;
 }
 
+.slider .pics-wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.hide {
+    display: none;
+}
+
 .slider .circles {
     position: absolute;
     width: 100%;
