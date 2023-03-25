@@ -21,14 +21,15 @@ for (let i = 0; i < pictures.length; i++) {
 
     const pic = pictures[i];
 
-    picsWrapper.innerHTML += 
-    `
-    <img class="pic hide" src="${pic}">
-    `
+    picsWrapper.innerHTML += `<img class="pic hide" src="${pic}">`
 }
 
 const items = document.getElementsByClassName('pic');
     // console.log('raccolta delle immagini per classe', items);.
+
+
+arrowPrev.classList.add('hide');
+
 
 arrowNext.addEventListener('click', function() {
 
@@ -37,6 +38,12 @@ arrowNext.addEventListener('click', function() {
     counterPic++;
     items[counterPic].classList.remove('hide');
 
+    if (counterPic == pictures.length - 1) {
+        arrowNext.classList.add('hide');
+    } else {
+        arrowPrev.classList.remove('hide');
+    }
+    
 })
 
 arrowPrev.addEventListener('click', function() {
@@ -46,4 +53,10 @@ arrowPrev.addEventListener('click', function() {
     counterPic--;
     items[counterPic].classList.remove('hide');
 
+
+    if (counterPic === 0) {
+        arrowPrev.classList.add('hide');
+    }else {
+        arrowNext.classList.remove('hide');
+    }
 })
