@@ -62,7 +62,12 @@ body {
     right: 10px;
 }
 
-.arrow:hover {
+.arrow.prev:hover {
+    background-color: #ffffff;
+    color: #ff0000;
+}
+
+.arrow.next:hover {
     background-color: #ffffff;
     color: #1ED760;
 }
