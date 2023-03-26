@@ -6,8 +6,11 @@
 }
 
 body {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #367bfc;
+    font-family: 'Kaushan Script', cursive;
+    /* background-color: #367bfc; */
+    background-image: url(../img/bg-img.png);
+    background-position: center;
+    background-size: cover;
     color: white;
     /* text-align: center; */
 } 
@@ -19,13 +22,20 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+}
+
+.wrapper h1 {
+    margin-bottom: 30px;
+    font-size: 4rem;
 }
 
 .container {
     width: 60%;
     height: 70%;
     /* background-color: #90ee90; */
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, .3);
+    box-shadow: 2px 2px 2px rgba(255, 255, 255, .3);
+    border: 1px solid rgba(255, 255, 255, .3);
 }
 
 .slider {
@@ -41,7 +51,7 @@ body {
 
 .slider .arrow {
     position: absolute;
-    padding: 7px 10px;
+    padding: 4px 10px;
     /* width: 30px;
     height: 30px;
     line-height: 30px; */
@@ -98,5 +108,5 @@ body {
 }
 
 .circle.active {
-    background-color: white;
+    background-color: #367bfc;
 }
